@@ -4,4 +4,4 @@ email  klaus.vormweg@gmx.de
 date   2020-09-30
 name   admnote plugin
 desc   Material-for-MkDocs Admonition notes for Dokuwiki
-url    https://www.vormweg.online
+url    https://www.vormweg.online/dokuwiki:admnote
