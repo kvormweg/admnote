@@ -75,7 +75,12 @@ class syntax_plugin_admnote_renderer extends DokuWiki_Syntax_Plugin {
      */
     public function handle($match, $state, $pos, Doku_Handler $handler) {
         global $conf;
-        require DOKU_PLUGIN.'admnote/lang/'.$conf['lang'].'/lang.php';
+        if(is_file(DOKU_PLUGIN.'admnote/lang/'.$conf['lang'].'/lang.php')) {
+            require DOKU_PLUGIN.'admnote/lang/'.$conf['lang'].'/lang.php';
+        } else {
+            require DOKU_PLUGIN.'admnote/lang/en/lang.php';
+        }
+
         $data = array();
         $cssClass = '';
         $heading = '';
