@@ -1,7 +1,7 @@
 base   admnote
 author Klaus Vormweg
 email  klaus.vormweg@gmx.de
-date   2020-09-30
+date   2020-10-02
 name   admnote plugin
 desc   Material-for-MkDocs Admonition notes for Dokuwiki
 url    https://www.vormweg.online/dokuwiki:admnote
