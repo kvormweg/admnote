@@ -54,3 +54,7 @@ You can use almost every DokuWiki element inside a note body except headers.
 
 This plugin was made for DokuWiki Release 2020-07-29 "Hogfather". It may work with earlier releases but that is untested.
 
+## ToDo
+
+* Support export into ODT format
+* Support more languages (help needed)
