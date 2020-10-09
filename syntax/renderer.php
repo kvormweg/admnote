@@ -97,7 +97,10 @@ class syntax_plugin_admnote_renderer extends DokuWiki_Syntax_Plugin {
                     $cssClass = $this->deftype;
                 }
                 if($words) {
-                    $heading = implode(' ',$words);
+                    $heading = trim(implode(' ',$words));
+                    if(!$heading) {
+                      $heading = $lang['adm_'.$cssClass];
+                    }
                 } else {
                     $heading = $lang['adm_'.$cssClass];
                 }
