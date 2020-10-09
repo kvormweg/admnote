@@ -86,8 +86,7 @@ class syntax_plugin_admnote_renderer extends DokuWiki_Syntax_Plugin {
         $heading = '';
         switch($state) {
             case DOKU_LEXER_ENTER:
-                $match = trim($match);
-                $match = str_replace(array('<','>'),'',$match);
+                $match = trim(str_replace(array('<','>'),'',$match));
                 $match = preg_replace('/ +/',' ',$match);
                 $words = explode(' ',$match);
                 array_shift($words);
@@ -97,10 +96,7 @@ class syntax_plugin_admnote_renderer extends DokuWiki_Syntax_Plugin {
                     $cssClass = $this->deftype;
                 }
                 if($words) {
-                    $heading = trim(implode(' ',$words));
-                    if(!$heading) {
-                      $heading = $lang['adm_'.$cssClass];
-                    }
+                    $heading = implode(' ',$words);
                 } else {
                     $heading = $lang['adm_'.$cssClass];
                 }
