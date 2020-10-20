@@ -39,7 +39,7 @@
 }
 .admonition-title {
 	position: relative;
-	margin: 0 -0.6rem 0 -0.8rem;
+	margin: 0 -0.6rem 0rem -0.8rem;
 	padding: .4rem .6rem .4rem 2.4rem;
 	font-weight: 700;
 	background-color: rgba(68,138,255,.1);
@@ -53,6 +53,11 @@
 	content: "";
 }
 
+.admonition-title + p, .admonition-title + ul, .admonition-title + ol,
+.admonition-title + dl, .admonition-title + pre, .admonition-title + table,
+.admonition-title + blockquote {
+  margin-top: 1rem;
+}
 /* Note type definitions */
 /* Note */
 .admonition.note {
