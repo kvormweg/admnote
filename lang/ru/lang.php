@@ -6,7 +6,7 @@ $lang['adm']             = 'Admonition Notes';
 
 $lang['adm_abstract']    = 'Резюме';
 $lang['adm_bug']         = 'Ошибка';
-$lang['adm_danger']      = 'Опасность';
+$lang['adm_danger']      = 'Опасно';
 $lang['adm_example']     = 'Пример';
 $lang['adm_failure']     = 'Сбой';
 $lang['adm_information'] = 'Информация';
